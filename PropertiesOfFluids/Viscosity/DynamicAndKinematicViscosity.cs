@@ -40,7 +40,7 @@ namespace PropertiesOfFluids.Viscosity
         public override double Viscosity()
         {
             
-            Console.WriteLine("Dynamic Viscosiy is {0}", base.Viscosity());
+            Console.WriteLine("Dynamic Viscosiy is {0} N.s/m²", base.Viscosity());
             return _thickness;
         }
     }
@@ -55,7 +55,7 @@ namespace PropertiesOfFluids.Viscosity
 
             double KinematicViscosity = base.Viscosity()/ massdensity;
 
-            Console.WriteLine("Kinematic Viscosiy is {0}", KinematicViscosity);
+            Console.WriteLine("Kinematic Viscosiy is {0} m²/s", KinematicViscosity);
             return KinematicViscosity;
         }
     }

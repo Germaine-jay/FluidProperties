@@ -39,7 +39,7 @@ namespace PropertiesOfFluids.DensityAndSG
         public override double Density()
         {
             double MassDensity = _mass / _volume;
-            Console.WriteLine($"The Mass Density of a mass of {_mass} with volume of {_volume} is -> {MassDensity}");
+            Console.WriteLine($"The Mass Density of a mass of {_mass} kg with volume of {_volume} m³ is -> {MassDensity} kg/m³");
             return MassDensity;
         }
     }
@@ -50,7 +50,8 @@ namespace PropertiesOfFluids.DensityAndSG
         public override double Density()
         {
             double WeughtDensity = _mass * 9.81 / _volume;
-            Console.WriteLine($"The weight Density of a mass of {_mass} with volume of {_volume} is -> {WeughtDensity}");
+            
+            Console.WriteLine($"The weight Density of a mass of {_mass} kN with volume of {_volume} m³ is -> {WeughtDensity} kN/m³");
             return WeughtDensity;
         }
     }
@@ -62,7 +63,7 @@ namespace PropertiesOfFluids.DensityAndSG
         public override double SpecificWeightofliquid()
         {
             var specificweight = _weightofliquid / _volumeofliquid;
-            Console.WriteLine($"The specific weight of {_weightofliquid} with volume of {_volumeofliquid} is -> {specificweight}");
+            Console.WriteLine($"The specific weight of {_weightofliquid} kN with volume of {_volumeofliquid} m³ is -> {specificweight} kN/m³");
             return base.SpecificWeightofliquid();
         }
     }
@@ -77,7 +78,7 @@ namespace PropertiesOfFluids.DensityAndSG
             double specificMass = specificweight * 1000 / 9.81;
 
             double specificVolume = 1 / specificMass;
-            Console.WriteLine($"The specific volume of {_weightofliquid} with volume of {_volumeofliquid} is -> {specificVolume}");
+            Console.WriteLine($"The specific volume of {_weightofliquid} kg with volume of {_volumeofliquid} m³ is -> {specificVolume} m³/kg");
             return base.SpecificWeightofliquid();
         }
     }
