@@ -46,7 +46,7 @@ namespace UsingFluidPropertiesPackage
 }
 ```
 
-##To calculate Weight Density 
+## To calculate Weight Density 
 Hint: mass should be in kN and volume should be in m³
 ```sh
 using PropertiesOfFluids.DensityAndSG
@@ -63,7 +63,7 @@ namespace UsingFluidPropertiesPackage
 }
 ```
 
-##To calculate Specific weight
+## To calculate Specific weight
 Hint: mass should be in kN and volume should be in m³
 ```sh
 using PropertiesOfFluids.DensityAndSG
@@ -80,7 +80,7 @@ namespace UsingFluidPropertiesPackage
 }
 ```
 
-##To calculate Specific gravity
+## To calculate Specific gravity
 Hint: mass should be in kN and volume should be in m³
 ```sh
 using PropertiesOfFluids.DensityAndSG
@@ -96,7 +96,7 @@ namespace UsingFluidPropertiesPackage
     }
 }
 ```
-##To calculate Specific volume
+## To calculate Specific volume
 Hint: mass should be in kN and volume should be in m³
 ```sh
 using PropertiesOfFluids.DensityAndSG
@@ -112,3 +112,37 @@ namespace UsingFluidPropertiesPackage
     }
 }
 ```
+## To calculate Dynamic Viscosity
+Hint: velocity should be in m/s thickness in mm and other vector parameters in m²
+```sh
+using PropertiesOfFluids.Viscosity
+namespace UsingFluidPropertiesPackage
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+	        var dynamicViscosity = CalculateFluidProperty.DynamicViscosity(double force, double area, double VelocityOfUpper, double VelocityOfLower, double thickness)
+            Console.Writeline(dynamicViscosity);
+        }
+    }
+}
+```
+## To calculate Kinematic Viscosity
+Hint: velocity should be in m/s thickness in mm and other vector parameters in m²
+```sh
+using PropertiesOfFluids.Viscosity
+namespace UsingFluidPropertiesPackage
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+	        var kinematicViscosity = CalculateFluidProperty.KinematicViscosity(double force, double area, double VelocityOfUpper, double VelocityOfLower, double thickness, double specificgravity)
+            Console.Writeline(kinematicViscosity);
+        }
+    }
+}
+```
+#Contibutions
+Contributios, complains and other feebbacks will be appreciated.
