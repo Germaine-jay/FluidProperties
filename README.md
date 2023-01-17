@@ -27,9 +27,9 @@ To install this package using the .NET CLI, run the following code:
 * Finally click on install.
 
 # How to use 
-This package contains multiple methods that are able to calculate different properties of a fluid
+This package contains multiple methods that are able to calculate different properties of a fluids.
 
-##To calculate the Density 
+## To calculate the Density 
 Hint: mass should be in kg and volume should be in m³
 ```sh
 using PropertiesOfFluids.DensityAndSG
