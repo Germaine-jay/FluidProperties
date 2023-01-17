@@ -27,4 +27,88 @@ To install this package using the .NET CLI, run the following code:
 * Finally click on install.
 
 # How to use 
-This package contains 
+This package contains multiple methods that are able to calculate differnt properties of a fluid
+
+##To calculate Density 
+Hint: mass should be in kg and volume should be in m³
+```sh
+using PropertiesOfFluids.DensityAndSG
+namespace UsingFluidPropertiesPackage
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+	        var Density = CalculateFluidProperty.GetDensity(double mass, double volume)
+            Console.Writeline(Density);
+        }
+    }
+}
+```
+
+##To calculate Weight Density 
+Hint: mass should be in kN and volume should be in m³
+```sh
+using PropertiesOfFluids.DensityAndSG
+namespace UsingFluidPropertiesPackage
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+	        var WetDensity = CalculateFluidProperty.GetWeightDensity(double mass, double volume)
+            Console.Writeline(WetDensity);
+        }
+    }
+}
+```
+
+##To calculate Specific weight
+Hint: mass should be in kN and volume should be in m³
+```sh
+using PropertiesOfFluids.DensityAndSG
+namespace UsingFluidPropertiesPackage
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+	        var SpecificWeight = CalculateFluidProperty.GetSpecificWeight(double mass, double volume)
+            Console.Writeline(SpecificWeight);
+        }
+    }
+}
+```
+
+##To calculate Specific gravity
+Hint: mass should be in kN and volume should be in m³
+```sh
+using PropertiesOfFluids.DensityAndSG
+namespace UsingFluidPropertiesPackage
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+	        var SpecificGravity = CalculateFluidProperty.GetSpecificGravity(double mass, double volume)
+            Console.Writeline(SpecificWeight);
+        }
+    }
+}
+```
+##To calculate Specific volume
+Hint: mass should be in kN and volume should be in m³
+```sh
+using PropertiesOfFluids.DensityAndSG
+namespace UsingFluidPropertiesPackage
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+	        var SpecificGravity = CalculateFluidProperty.GetSpecificVolume(double mass, double volume)
+            Console.Writeline(SpecificWeight);
+        }
+    }
+}
+```
